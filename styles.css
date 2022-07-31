@@ -64,8 +64,60 @@ body{
 
 
 /* info */
-
-.info-imgs img{ 
-    height: 100px;
-    width: 100px;
+.info{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1F2937;
+    background: whitesmoke;
+    height: 31rem
 }
+.info h2{
+    margin-top: 2rem;
+    font-size: 2rem;
+    
+}
+.info .info-imgs{ 
+    display: flex;
+    margin-top: 1rem;
+    gap: 3rem;
+}
+.info-imgs div{ 
+    height: 100%;
+    width: 200px;
+    text-align: center;
+    
+}
+.info-imgs img{ 
+    height: 200px;
+    width: 200px;
+    border: 2px solid #3882f6;
+    border-radius: 9px;
+    transition: all 0.2s;
+
+}
+
+.info-imgs img:hover{ 
+    transform: scale(1.1);
+    border-style: dashed;
+    
+}
+
+/* quote */ 
+.quote { 
+    /* margin: 7rem 0; */
+    background: url(https://wallpaperaccess.com/full/19223.jpg);
+    height: 200px;
+    background-position: center 55%;
+}
+.quote div{ 
+    color: whitesmoke;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
