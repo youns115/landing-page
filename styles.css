@@ -10,11 +10,13 @@ body{
 }
 
 /* navbar */
-.nav-bar{ 
+
+.nav-bar div{ 
     background: #1F2937;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    vertical-align: center;
     
     
 }
@@ -22,8 +24,10 @@ body{
 .nav-bar .links ul{ 
    list-style: none;
    display: flex;
+   justify-content: space-around;
    gap: 25px;
-    margin-left: 25rem;
+
+    /* padding-left: 25rem; */
    
 }
 
@@ -41,7 +45,8 @@ body{
 }
 .hero h1{ 
     margin: 0;
-    
+    font-size: 3rem;
+    line-height: 3.6rem;
 }
 
 .hero p{ 
@@ -53,12 +58,20 @@ body{
     width: 350px;
 
 }
-.hero .button{ 
+.button-main{ 
     padding: 0.3rem 1.5rem;
     background: #3882f6;
     border-style: none;
     color: #E5E7EB;
-    border-radius: 10px;
+    border-radius: 9px;
+    font-weight: bold;
+}
+.button-secondary{ 
+    padding: 0.3rem 1.5rem;
+    background: #3882f6;
+    border: 2px solid #E5E7EB;
+    color: #E5E7EB;
+    border-radius: 9px;
     font-weight: bold;
 }
 
@@ -104,20 +117,63 @@ body{
 }
 
 /* quote */ 
-.quote { 
-    /* margin: 7rem 0; */
-    background: url(https://wallpaperaccess.com/full/19223.jpg);
-    height: 200px;
-    background-position: center 55%;
-}
-.quote div{ 
-    color: whitesmoke;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+.quote{ 
+    background: #E5E7EB;
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    padding: 8rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: center;
     
 }
 
+.quote p{ 
+    margin-top: 0;
+
+}
+.quote span{ 
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* call */
+.call{ 
+    
+    
+    
+    padding: 7rem;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.call-background{ 
+    background: #3882f6;
+    width: 70rem;
+    height: 10rem;
+    padding: 0 5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.call p,h3{ 
+    margin: 0;
+}
+
+/* footer */
+
+.footer{ 
+    background: #1F2937;
+    padding: 1rem 0 2rem;
+    text-align: center;
+}
+.footer p{ 
+    margin-bottom: 0;
+}
 
